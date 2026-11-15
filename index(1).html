@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varoon Kumar | Software &amp; Web Developer</title>
+<meta name="description" content="Online resume of Varoon Kumar, BS Computer Science student at Iqra University.">
+<style>
+:root{--bg:#f7f8fa;--surface:#fff;--text:#1c2430;--muted:#5d6b7c;--accent:#0f766e;--accent-2:#e6f4f2;--border:#e2e6ec}
+[data-theme=dark]{--bg:#0f1419;--surface:#1a212b;--text:#e8edf3;--muted:#9aa8b8;--accent:#4fd1c0;--accent-2:#1c2e2e;--border:#2b3541}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);transition:background .3s,color .3s}
+a{color:var(--accent)}
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:1rem;padding:.7rem 5%;background:var(--surface);border-bottom:1px solid var(--border)}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none;margin-right:auto}
+#links{display:flex;gap:1.1rem}#links a{color:var(--text);text-decoration:none;font-size:.92rem}#links a:hover{color:var(--accent)}
+.icon-btn{background:none;border:1px solid var(--border);border-radius:8px;padding:.3rem .6rem;cursor:pointer;font-size:1rem;color:var(--text)}
+.menu{display:none}
+main{max-width:980px;margin:auto;padding:0 5%}
+section{padding:3rem 0 1rem}h2{font-size:1.6rem;margin:0 0 1rem;border-left:4px solid var(--accent);padding-left:.7rem}
+.hero{padding:5rem 0 2rem}.eyebrow{color:var(--accent);font-weight:600;margin:0}
+h1{font-size:clamp(2.3rem,7vw,3.8rem);margin:.2rem 0;line-height:1.1}
+.role{font-size:1.4rem;margin:.3rem 0}#typed{color:var(--accent);font-weight:600}.cursor{animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0}}.lead{max-width:640px;color:var(--muted)}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{background:var(--accent);color:var(--bg);padding:.6rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600;border:2px solid var(--accent);cursor:pointer;font-size:.95rem}
+.btn.ghost{background:none;color:var(--accent)}.btn.small{padding:.15rem .7rem;font-size:.8rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;transition:transform .2s,box-shadow .2s}
+.grid .card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.card h3{margin:0 0 .2rem;font-size:1.1rem}.meta{color:var(--muted);font-size:.9rem;margin:0 0 .5rem}
+.card ul{margin:.3rem 0 0;padding-left:1.2rem}.ach{list-style:disc;padding-left:2.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.tab{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:.4rem 1rem;border-radius:999px;cursor:pointer}
+.tab.active{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}.chip{background:var(--accent-2);color:var(--accent);padding:.35rem .9rem;border-radius:999px;font-weight:600;font-size:.9rem}
+.tag{display:inline-block;background:var(--accent-2);color:var(--accent);border-radius:6px;padding:.05rem .5rem;font-size:.78rem;margin:.15rem .2rem 0 0}
+.contact p{margin:.4rem 0}footer{text-align:center;color:var(--muted);padding:3rem 5% 2rem;font-size:.9rem}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.menu{display:block}#links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--surface);padding:1rem 5%;border-bottom:1px solid var(--border)}#links.open{display:flex}.hero{padding-top:3rem}}
+
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">VK</a>
+  <button id="menuBtn" class="icon-btn menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="links">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+    <a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="eyebrow">Hello, I'm</p>
+  <h1>Varoon Kumar</h1>
+  <p class="role">I build <span id="typed"></span><span class="cursor">|</span></p>
+  <p class="lead">BS Computer Science student at Iqra University (graduating 2027), combining full-stack web development with practical AI work in RAG, LLMs and computer vision.</p>
+  <div class="cta"><a class="btn" href="#projects">View projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+</section>
+
+<section id="about"><h2>About me</h2>
+  <p>I am a Karachi-based Computer Science undergraduate looking for a Software or Web Development internship. Alongside my studies I work as a freelancer, which taught me to scope work, communicate clearly with clients and ship on deadlines. I enjoy turning ideas into complete products, from database design to polished interfaces, and I am especially interested in integrating AI into real applications.</p>
+</section>
+
+<section id="education"><h2>Education</h2>
+  <div class="card"><h3>BS Computer Science</h3><p class="meta">Iqra University, Main Campus, Karachi · Expected graduation 2027</p>
+  <p>Coursework includes Database Management Systems, Design &amp; Analysis of Algorithms, Data Communication &amp; Computer Networks, Compiler Construction, Theory of Automata, Computer Vision and Web Engineering.</p></div>
+</section>
+
+<section id="skills"><h2>Technical skills</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="web">Web</button><button class="tab" data-tab="backend">Backend &amp; Data</button>
+    <button class="tab" data-tab="ai">AI &amp; Vision</button><button class="tab" data-tab="tools">Tools</button>
+  </div>
+  <div id="skillList" class="chips"></div>
+</section>
+
+<section id="experience"><h2>Experience</h2>
+  <div class="card"><h3>Freelance Web Developer</h3><p class="meta">Self-employed · Ongoing alongside studies</p>
+  <ul><li>Build websites and web applications for clients, from layout to deployment.</li>
+  <li>Turn design references (e.g. Figma) into responsive HTML/CSS pages with hover and layout interactions.</li>
+  <li>Developing services to offer through freelancing platforms such as Fiverr.</li></ul></div>
+</section>
+
+<section id="projects"><h2>Projects</h2>
+  <div class="tabs" id="filters">
+    <button class="tab active" data-f="all">All</button><button class="tab" data-f="web">Web</button>
+    <button class="tab" data-f="ai">AI</button><button class="tab" data-f="academic">Academic</button>
+  </div>
+  <div id="projectGrid" class="grid"></div>
+</section>
+
+<section id="certs"><h2>Certifications</h2>
+  <!-- TODO: replace these placeholder entries with your real certificates -->
+  <div class="grid">
+    <div class="card"><h3>[Certification name]</h3><p class="meta">[Issuer] · [Year]</p></div>
+    <div class="card"><h3>[Certification name]</h3><p class="meta">[Issuer] · [Year]</p></div>
+  </div>
+</section>
+
+<section id="achievements"><h2>Achievements</h2>
+  <ul class="card ach">
+    <li>Cleared the Final Year Project title defense with an AR and blockchain-based e-commerce concept.</li>
+    <li>Built image captioning (BLIP) and visual question answering (CLIP) pipelines on MS-COCO.</li>
+    <li>Designed an original programming language, Zyra, with custom keywords and DFAs.</li>
+    <li>Built a full-stack AI chatbot SaaS with streaming responses in a Turborepo monorepo.</li>
+  </ul>
+</section>
+
+<section id="contact"><h2>Contact</h2>
+  <div class="card contact">
+    <p>Open to Software / Web Development internships.</p>
+    <p>Email: <a id="email" href="mailto:your.email@example.com">your.email@example.com</a> <button id="copyBtn" class="btn small">Copy</button></p>
+    <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a> · LinkedIn: <a href="https://linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+    <p>Location: Karachi, Pakistan</p>
+  </div>
+</section>
+</main>
+<footer>© <span id="year"></span> Varoon Kumar · Built with HTML, CSS and JavaScript</footer>
+<script>
+const skills = {
+  web: ["HTML5","CSS3","JavaScript","React","Next.js 14","Responsive design","Figma to code"],
+  backend: ["Node.js / Express","MongoDB (MERN)","ASP.NET Core","PostgreSQL","Prisma ORM","JWT auth","REST APIs","SQL / DBMS design"],
+  ai: ["Python","OpenCV","BLIP (captioning)","CLIP / VQA","RAG","LLM APIs (Anthropic)"],
+  tools: ["Git &amp; GitHub","pnpm / Turborepo","Flutter","Google Colab","Figma"]
+};
+const projects = [
+  {t:"AI Chatbot SaaS",c:"ai",d:"Streaming chatbot platform with JWT authentication and Anthropic API integration, built as a monorepo.",s:["Next.js 14","Express","PostgreSQL","Prisma","SSE"]},
+  {t:"SplitEasy",c:"web",d:"Installable PWA for splitting group expenses, with an algorithm that simplifies debts into fewer payments.",s:["MongoDB","Express","React","Node.js"]},
+  {t:"Cyber Cafe POS",c:"web",d:"Point-of-sale system for a cyber cafe with a browser frontend and an ASP.NET Core API.",s:["HTML/CSS/JS","ASP.NET Core"]},
+  {t:"AR E-Commerce App (FYP)",c:"academic",d:"Team project of four: mobile shopping app with AR product views, blockchain-backed authenticity checks and fraud detection.",s:["Flutter","Blockchain","AR"]},
+  {t:"Image Captioning &amp; VQA",c:"ai",d:"Generated captions with BLIP on MS-COCO and answered questions about images using CLIP-based multimodal models.",s:["Python","BLIP","CLIP","Colab"]},
+  {t:"Zyra Language",c:"academic",d:"Original programming language for Compiler Construction, with its own keywords and DFA-based token recognition.",s:["Automata","Lexical analysis"]},
+  {t:"Online Shopping Store DB",c:"academic",d:"Relational database for an online store: schema, sample data, CRUD queries and ER diagram.",s:["SQL","ERD"]},
+  {t:"Agency Landing Page",c:"web",d:"Marketing agency page recreated from a Figma design with responsive layout and hover interactions.",s:["HTML","CSS","Figma"]}
+];
+const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+
+// Skills tabs
+function showSkills(k){ $("#skillList").innerHTML = skills[k].map(x=>`<span class="chip">${x}</span>`).join(""); }
+$$("[data-tab]").forEach(b=>b.onclick=()=>{ $$("[data-tab]").forEach(x=>x.classList.remove("active")); b.classList.add("active"); showSkills(b.dataset.tab); });
+showSkills("web");
+
+// Project filter
+function showProjects(f){
+  $("#projectGrid").innerHTML = projects.filter(p=>f==="all"||p.c===f).map(p=>
+    `<div class="card"><h3>${p.t}</h3><p>${p.d}</p>${p.s.map(x=>`<span class="tag">${x}</span>`).join("")}</div>`).join("");
+}
+$$("[data-f]").forEach(b=>b.onclick=()=>{ $$("[data-f]").forEach(x=>x.classList.remove("active")); b.classList.add("active"); showProjects(b.dataset.f); });
+showProjects("all");
+
+// Theme toggle (remembered between visits)
+function setTheme(t){ document.documentElement.dataset.theme=t; $("#themeBtn").textContent = t==="dark"?"☀️":"🌙"; try{localStorage.setItem("theme",t)}catch(e){} }
+let saved=null; try{saved=localStorage.getItem("theme")}catch(e){}
+setTheme(saved || (matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));
+$("#themeBtn").onclick=()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark");
+
+// Mobile menu
+$("#menuBtn").onclick=()=>{ const o=$("#links").classList.toggle("open"); $("#menuBtn").setAttribute("aria-expanded",o); };
+$$("#links a").forEach(a=>a.onclick=()=>$("#links").classList.remove("open"));
+
+// Typing effect
+const roles=["web applications.","full-stack products.","AI-powered tools.","computer vision demos."];
+let r=0,c=0,del=false;
+(function type(){
+  const w=roles[r]; $("#typed").textContent=w.slice(0,c);
+  if(!del&&c===w.length){del=true;return setTimeout(type,1400)}
+  if(del&&c===0){del=false;r=(r+1)%roles.length}
+  c+=del?-1:1; setTimeout(type,del?40:80);
+})();
+
+// Copy email
+$("#copyBtn").onclick=async()=>{ try{await navigator.clipboard.writeText($("#email").textContent); $("#copyBtn").textContent="Copied!";}catch(e){$("#copyBtn").textContent="Press Ctrl+C";} setTimeout(()=>$("#copyBtn").textContent="Copy",1500); };
+
+// Scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)} }),{threshold:.1});
+$$("section").forEach(s=>{s.classList.add("reveal");io.observe(s)});
+$("#year").textContent=new Date().getFullYear();
+
+</script>
+</body>
+</html>
